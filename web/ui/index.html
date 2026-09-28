@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUMINARA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ls-root">
+    <div class="ls-bg">
+      <video class="ls-bg-media" autoplay muted loop playsinline>
+        <source src="assets/video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="ls-overlay"></div>
+
+    <div class="ls-widget ls-clock">
+      <div class="ls-widget-label">Time</div>
+      <div class="ls-widget-value" data-clock>--:--</div>
+    </div>
+
+    <div class="ls-content">
+      <div class="ls-card">
+
+        <div class="ls-brand">
+          <h1 class="ls-title">LUMINARA</h1>
+          <p class="ls-subtitle">Your server description</p>
+        </div>
+
+        <div class="ls-progress">
+          <div class="ls-prog-top">
+            <div class="ls-prog-label">CONNECTING</div>
+            <div class="ls-pct" data-pct>0%</div>
+          </div>
+          <div class="ls-segments" data-segments>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ls-audio" data-audio data-muted="1">
+      <button class="ls-audio-btn ls-audio-toggle" data-audio-toggle type="button" aria-label="Mute / unmute">
+        <svg class="ls-ic-on" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z" />
+        </svg>
+        <svg class="ls-ic-off" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 10v4h4l5 5V5L7 10H3z" />
+          <line x1="16" y1="8" x2="21" y2="16" stroke="currentColor" stroke-width="2" />
+          <line x1="21" y1="8" x2="16" y2="16" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+      <input class="ls-audio-range" data-audio-range type="range" min="0" max="100" value="45" aria-label="Volume">
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
